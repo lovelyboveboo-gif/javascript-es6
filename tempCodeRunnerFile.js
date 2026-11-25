@@ -1,19 +1,9 @@
-const employee1 = {
-  name: "John",
-  age: 20,
-};
+function sum(...number) {
+  // Start coding here !
+  return number.reduce((acc,cur) => acc + cur,0)
+}
+let result1 = sum(1, 2, 3, 4, 5, 6, 7, 8);
+let result2 = sum(1, 2, 3, 4);
 
-const result1 = employee1.scores?.english;
-
-const employee2 = {
-  name: "A",
-  age: 50,
-  scores: {
-    math: 40,
-  },
-};
-
-const result2 = employee2.scores?.english?? "English score is not defined";
-
-console.log(result1)
-console.log(result2)
+console.log(`Result ${result1}`);
+console.log(`Result ${result2}`);
